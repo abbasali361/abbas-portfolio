@@ -123,17 +123,45 @@
         </div>
 
         <div class="col-right">
-          <form class="contact-form">
-            <div class="form-group">
-              <input type="text" placeholder="your name" />
-              <input type="email" placeholder="your email" />
-              <input type="text" placeholder="your subject" />
-            </div>
-            <textarea rows="5"></textarea>
-            <button type="button" class="btn">
-              <a href="">send message</a>
-            </button>
-          </form>
+
+          <div>
+            <h1>Contact Me</h1>
+            <form
+              class="contact-form"
+              target="_blank"
+              action="https://formsubmit.co/alabbashossain@gmail.com"
+              method="POST"
+            > 
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="name"
+                  class="form-control"
+                  placeholder="Full Name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Email Address"
+                  required
+                />
+              </div>
+              <div>
+                <textarea
+                  placeholder="Your Message"
+                  class="form-control"
+                  name="message"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-lg btn-dark btn-block">
+                Submit Form
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </section>
